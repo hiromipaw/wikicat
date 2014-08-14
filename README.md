@@ -1,4 +1,4 @@
-wikicat
+WikiCat
 =======
 
 Wikipedia Categories API
