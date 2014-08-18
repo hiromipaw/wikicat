@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cl_from: 1
+  cl_to: MyString
+  cl_sortkey: 
+  cl_timestamp: 2014-08-09
+  cl_sortkey_prefix: 
+  cl_collation: 
+  cl_type: MyString
+
+two:
+  cl_from: 1
+  cl_to: MyString
+  cl_sortkey: 
+  cl_timestamp: 2014-08-09
+  cl_sortkey_prefix: 
+  cl_collation: 
+  cl_type: MyString

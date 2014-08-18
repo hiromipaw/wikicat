@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cat_id: 1
+  cat_title: MyString
+  cat_pages: 1
+  cat_subcats: 1
+  cat_files: 1
+
+two:
+  cat_id: 1
+  cat_title: MyString
+  cat_pages: 1
+  cat_subcats: 1
+  cat_files: 1
