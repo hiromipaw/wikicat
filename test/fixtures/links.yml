@@ -2,18 +2,18 @@
 
 one:
   cl_from: 1
-  cl_to: MyString
-  cl_sortkey: 
-  cl_timestamp: 2014-08-09
-  cl_sortkey_prefix: 
-  cl_collation: 
-  cl_type: MyString
+  cl_to: Sports
+  cl_sortkey: CULTURE AND SPORTS CULTURE
+  cl_timestamp: 2005-04-29 10:32:42
+  cl_sortkey_prefix: Culture
+  cl_collation: uppercase
+  cl_type: subcat
 
 two:
-  cl_from: 1
-  cl_to: MyString
-  cl_sortkey: 
-  cl_timestamp: 2014-08-09
-  cl_sortkey_prefix: 
-  cl_collation: 
-  cl_type: MyString
+  cl_from: 2
+  cl_to: Science
+  cl_sortkey: SCIENTIFIC DISCIPLINES
+  cl_timestamp: 2013-09-02 22:56:59
+  cl_sortkey_prefix: Sci
+  cl_collation: uppercase
+  cl_type: subcat

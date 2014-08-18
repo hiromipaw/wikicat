@@ -1,8 +1,8 @@
 class LinkSerializer < ActiveModel::Serializer
 
-  attributes :cl_to, :cl_type, :sortkey
+  attributes :sub_category
 
-  def sortkey
-    object.cl_sortkey.force_encoding("ISO-8859-1").encode("utf-8", replace: nil)
+  def sub_category
+    URI::encode(object.cl_sortkey.force_encoding("ISO-8859-1").encode("utf-8", replace: nil).downcase.tr(" ", "_"))
   end
 end

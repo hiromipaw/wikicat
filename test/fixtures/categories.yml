@@ -2,14 +2,14 @@
 
 one:
   cat_id: 1
-  cat_title: MyString
+  cat_title: Sports
   cat_pages: 1
   cat_subcats: 1
   cat_files: 1
 
 two:
-  cat_id: 1
-  cat_title: MyString
+  cat_id: 2
+  cat_title: Science
   cat_pages: 1
   cat_subcats: 1
   cat_files: 1
