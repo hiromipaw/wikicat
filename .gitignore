@@ -7,9 +7,10 @@
 # Ignore bundler config.
 /.bundle
 
-# Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
+# Ignore DS-STORE and .keep and .idea
+.DS_Store
+.keep
+.idea
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
