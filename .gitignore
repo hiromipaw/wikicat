@@ -10,7 +10,7 @@
 # Ignore DS-STORE and .keep and .idea
 .DS_Store
 .keep
-.idea
+/.idea
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
