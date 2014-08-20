@@ -27,7 +27,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: rawbldrbldr_test
+  database: rawbldrbldr
   socket: /var/lib/openshift/53f3b98550044663c2000253/mysql/socket/mysql.sock
   DATABASE_URL: mysql://127.10.149.2:3306/
   password: slJvY1JBg8bY
