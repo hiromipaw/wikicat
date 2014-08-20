@@ -20,6 +20,7 @@ default: &default
 development:
   <<: *default
   database: wikicat_development
+  socket: $OPENSHIFT_HOMEDIR/mysql-5.1/socket/mysql.sock 
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
