@@ -28,6 +28,7 @@ development:
 test:
   <<: *default
   database: rawbldrbldr_test
+  socket: /var/lib/openshift/53f3b98550044663c2000253/mysql/socket/mysql.sock
   DATABASE_URL: mysql://127.10.149.2:3306/
   password: slJvY1JBg8bY
   username: adminNbG1IZz
