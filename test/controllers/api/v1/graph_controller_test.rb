@@ -4,7 +4,7 @@ class Api::V1::GraphControllerTest < ActionController::TestCase
   test "should get index" do
     get :index, {'category' => "sports"}
     assert_response :success
-    assert_equal "{\"Sports\":[{\"sub_category\":\"CULTURE%20AND%20SPORTS%20CULTURE\"}]}", @response.body
+    assert_equal "{\"Sports\":[{\"sub_category\":\"culture_and_sports_culture\"}]}", @response.body
   end
 
 end
