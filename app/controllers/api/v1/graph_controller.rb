@@ -2,7 +2,7 @@ class Api::V1::GraphController < ApplicationController
   respond_to :json
 
   def index
-    category = params[:category] ? params[:category] : "sports"
+    category = params[:category] ? params[:category] : "Main_topic_classifications"
 
     @category = Category.where(:cat_title => category.capitalize).first
     if @category
