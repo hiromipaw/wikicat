@@ -8,7 +8,6 @@ class CreateCategories < ActiveRecord::Migration
       t.integer :cat_files
       t.date :created_at
       t.date :updated_at
-
       t.timestamps
     end
     execute "ALTER TABLE categories ADD PRIMARY KEY (cat_id);"
