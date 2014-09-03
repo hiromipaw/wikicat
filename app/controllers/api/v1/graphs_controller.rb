@@ -13,10 +13,9 @@ class Api::V1::GraphsController < ApplicationController
     if @category
       @links = Link.where(:cl_to => @category.cat_title).where(:cl_type => "subcat")
       render :json => @links, each_serializer: LinkSerializer, root: @category.cat_title.downcase
+    else
+      render :json => {:error => {:text => "404 Not found", :status => 404}}
     end
-
-    #add error handling
-
   end
 
   private
