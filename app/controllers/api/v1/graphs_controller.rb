@@ -18,6 +18,17 @@ class Api::V1::GraphsController < ApplicationController
     end
   end
 
+  def up
+    category = params[:category] ? params[:category] : "Main_topic_classifications"
+    @category = Category.where(:cat_title => category.capitalize).first
+    if @category
+      @links = Link.where(:cl_sortkey => category.upcase)
+      render :json => @links, each_serializer: LinkSerializer, root: @category.cat_title.downcase
+    else
+      render :json => {:error => {:text => "404 Not found", :status => 404}}
+    end
+  end
+
   private
 
   def graph_params

@@ -7,7 +7,7 @@ class LinkSerializer < ActiveModel::Serializer
   end
 
   def links
-    {:self => _self, :graph => graph}
+    {:self => _self, :next => _next, :graph => graph}
   end
 
   def graph
@@ -18,6 +18,11 @@ class LinkSerializer < ActiveModel::Serializer
   def _self
     href = URI::encode("/api/v1/category/#{self.sub_category[/([^0A]*(.)$)/]}")
     {:href => href, :method => "GET", :rel => "self"}
+  end
+
+  def _next
+    href = URI::encode("/api/v1/category/#{object.cl_to[/([^0A]*(.)$)/]}")
+    {:href => href, :method => "GET", :rel => "_next"}
   end
 
 end
