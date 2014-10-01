@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140809155525) do
+ActiveRecord::Schema.define(version: 20140908145510) do
 
   create_table "categories", primary_key: "cat_id", force: true do |t|
     t.binary  "cat_title",   limit: 255,             null: false
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20140809155525) do
 
   add_index "links", ["cl_collation"], name: "cl_collation", using: :btree
   add_index "links", ["cl_from", "cl_to"], name: "cl_from", unique: true, using: :btree
+  add_index "links", ["cl_sortkey"], name: "index_links_on_cl_sortkey", using: :btree
   add_index "links", ["cl_to", "cl_timestamp"], name: "cl_timestamp", using: :btree
   add_index "links", ["cl_to", "cl_type", "cl_sortkey", "cl_from"], name: "cl_sortkey", using: :btree
 

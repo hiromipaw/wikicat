@@ -1,5 +1,5 @@
 class CategorySerializer < ActiveModel::Serializer
-  attributes :title, :sub_categories, :_graph, :_self
+  attributes :title, :sub_categories, :_links
 
   def title
     URI::encode(object.cat_title.force_encoding("ISO-8859-1").encode("utf-8", replace: nil).downcase.tr(" ", "_"))
@@ -9,12 +9,18 @@ class CategorySerializer < ActiveModel::Serializer
     object.cat_subcats
   end
 
+  def _links
+    {:self => _self, :graph => _graph}
+  end
+
   def _graph
-    URI::encode("/api/v1/graph/#{self.title}")
+    href = URI::encode("/api/v1/graph/#{self.title}")
+    {:href => href, :method => "GET", :rel => "graph"}
   end
 
   def _self
-    URI::encode("/api/v1/category/#{self.title}")
+    href = URI::encode("/api/v1/category/#{self.title}")
+    {:href => href, :method => "GET", :rel => "self"}
   end
 
 end
