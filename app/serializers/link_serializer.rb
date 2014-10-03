@@ -1,5 +1,5 @@
 class LinkSerializer < ActiveModel::Serializer
-
+  # We use two attributes: the sub category and the links field
   attributes :sub_category, :links
 
   def sub_category
@@ -21,7 +21,7 @@ class LinkSerializer < ActiveModel::Serializer
   end
 
   def _next
-    href = URI::encode("/api/v1/category/#{object.cl_to[/([^0A]*(.)$)/]}")
+    href = URI::encode("/api/v1/category/#{object.cl_to}")
     {:href => href, :method => "GET", :rel => "_next"}
   end
 
