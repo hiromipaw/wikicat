@@ -59,15 +59,13 @@ Category.create(:cat_id => 161042,:cat_title => "Humans",:cat_pages => 63,:cat_s
 Category.create(:cat_id => 236283,:cat_title => "People",:cat_pages => 17,:cat_subcats => 13,:cat_files => 0)
 Category.create(:cat_id => 196957,:cat_title => "Mathematics",:cat_pages => 31,:cat_subcats => 18,:cat_files => 0)
 
-Category.create(:cat_id => 1282, :cat_title => "Sports", :cat_pages => 42, :cat_subcats => 41, :cat_files => 0)
-
 Link.create(:cl_from => 1489599, :cl_to => "Sports", :cl_sortkey => "CULTURE\nSPORTS CULTURE",
             :cl_timestamp => "2005-04-29 10:32:42", :cl_sortkey_prefix => "Culture", :cl_collation => "uppercase",
             :cl_type => "subcat")
 Link.create(:cl_from => 1489690, :cl_to => "Sports", :cl_sortkey => "TERMINOLOGY\nSPORTS TERMINOLOGY",
             :cl_timestamp => "2005-05-30 06:30:16", :cl_sortkey_prefix => "Terminology",
             :cl_collation => "uppercase", :cl_type => "subcat")
-Link.create(:cl_from => 708305, cl_to => "Sports", :cl_sortkey => "TROPHIES\nSPORTS TROPHIES AND AWARDS", 
+Link.create(:cl_from => 708305, :cl_to => "Sports", :cl_sortkey => "TROPHIES\nSPORTS TROPHIES AND AWARDS", 
             :cl_timestamp => "2005-06-23 12:48:49", :cl_sortkey_prefix => "Trophies", :cl_collation => "uppercase", 
             :cl_type => "subcat")
 Link.create(:cl_from => 2693936, :cl_to => "Sports", :cl_sortkey => "LISTS\nSPORTS-RELATED LISTS",
@@ -174,8 +172,6 @@ Link.create(:cl_from => 18567302, :cl_to => "Sports", :cl_sortkey => " \nCATEGOR
 Link.create(:cl_from => 43221512, :cl_to => "Sports", :cl_sortkey => " PLACE\nSPORT BY PLACE",
             :cl_timestamp => "2014-07-06 10:16:33", :cl_sortkey_prefix => " Place", :cl_collation => "uppercase", :cl_type => "subcat")
 
-Category.create(:cat_id => 157090, :cat_title => "History", :cat_pages => 59, :cat_subcats => 31, :cat_files => 0)
-
 Link.create(:cl_from => 4303236, :cl_to => "History", :cl_sortkey => " \nHISTORY-RELATED LISTS", :cl_timestamp => "2014-07-04 22:52:14", 
     :cl_sortkey_prefix => " ", :cl_collation => "uppercase", :cl_type => "subcat") 
 Link.create(:cl_from => 1724212, :cl_to => "History", :cl_sortkey => " \nPREHISTORY", :cl_timestamp => "2014-07-04 23:16:08", :cl_sortkey_prefix => " ", :cl_collation => "uppercase", :cl_type => "subcat") 
@@ -209,8 +205,6 @@ Link.create(:cl_from => 27562533, :cl_to => "History", :cl_sortkey => "\xCE\x92\
 Link.create(:cl_from => 1821011, :cl_to => "History", :cl_sortkey => "\xCE\x99\nHISTORY IMAGES", :cl_timestamp => "2008-11-17 16:20:24", :cl_sortkey_prefix => "\xCE\xB9", :cl_collation => "uppercase", :cl_type => "subcat")
 Link.create(:cl_from => 5905027, :cl_to => "History", :cl_sortkey => "\xCE\xA1\nHISTORY PORTALS", :cl_timestamp => "2014-06-04 08:40:36", :cl_sortkey_prefix => "\xCF\x81", :cl_collation => "uppercase", :cl_type => "subcat")
 Link.create(:cl_from => 42865250, :cl_to => "History", :cl_sortkey => "\xCE\xA3HISTORY STUBS\nHISTORY STUBS", :cl_timestamp => "2014-05-26 07:07:10", :cl_sortkey_prefix => "\xCE\xA3History stubs", :cl_collation => "uppercase", :cl_type => "subcat")
-
-Category.create(:cat_id => 275726, :cat_title=> "Science", :cat_pages => 72, :cat_subcats => 34, :cat_files => 0)
 
 Link.create(:cl_from => 3981960, :cl_to => "Science", :cl_sortkey => " \nSCIENTIFIC DISCIPLINES", :cl_timestamp => "2013-09-02 22:56:59", :cl_sortkey_prefix => " ", :cl_collation => "uppercase", :cl_type => "subcat") 
 Link.create(:cl_from => 694953, :cl_to => "Science", :cl_sortkey => " \nSCIENTISTS", :cl_timestamp => "2014-04-06 14:11:27", :cl_sortkey_prefix => " ", :cl_collation => "uppercase", :cl_type => "subcat") 
